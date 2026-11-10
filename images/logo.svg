@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="t d">
+<title id="t">Логотип КиберЩит</title><desc id="d">Щит с замком — символ цифровой безопасности</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#2f6fed"/><stop offset="1" stop-color="#6f42c1"/></linearGradient></defs>
+<rect width="320" height="320" rx="54" fill="#f4f7ff"/>
+<path d="M160 38 267 78v74c0 69-43 111-107 139C96 263 53 221 53 152V78z" fill="url(#g)"/>
+<rect x="109" y="140" width="102" height="82" rx="15" fill="white"/>
+<path d="M130 140v-20c0-42 60-42 60 0v20" fill="none" stroke="white" stroke-width="18" stroke-linecap="round"/>
+<circle cx="160" cy="177" r="10" fill="#2f6fed"/><rect x="155" y="177" width="10" height="24" rx="5" fill="#2f6fed"/>
+</svg>
