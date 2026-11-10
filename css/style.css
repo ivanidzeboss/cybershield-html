@@ -5,3 +5,17 @@
 .statcounter-widget{display:inline-flex;align-items:center;min-height:24px;background:#ffffff;padding:8px 12px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.18)}
 .statcounter-widget img{display:inline-block;vertical-align:middle;transform:scale(1.28);transform-origin:left center}
 @media(max-width:560px){.statcounter-row{justify-content:flex-start}.statcounter-label{width:100%}}
+
+/* Visible Statcounter in the clock/date strip: more legible on dark blue. */
+.statusbar .container{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:9px 0;font-size:14px}
+.statusbar-message{font-weight:600;color:#e5ecff}
+.statusbar-meta{display:flex;justify-content:flex-end;align-items:center;gap:20px;flex-wrap:wrap}
+.statusbar-clock{color:#ffffff;font-weight:700;white-space:nowrap}
+.visit-count{display:flex;align-items:center;gap:10px;min-height:34px;border-left:1px solid rgba(255,255,255,.35);padding-left:18px}
+.visit-count-label{font-size:16px;font-weight:700;color:#ffffff;white-space:nowrap}
+.statusbar .statcounter-widget{display:inline-flex;align-items:center;justify-content:center;min-height:34px;min-width:38px;background:transparent;padding:0;box-shadow:none;color:#ffffff;font-size:27px;font-weight:800;line-height:1}
+.statusbar .statcounter-widget a,.statusbar .statcounter-widget span{color:#ffffff!important;font-size:27px!important;font-weight:800!important}
+/* If Statcounter serves a light image with dark digits, invert tones and blend the black backdrop away. For guaranteed white digits, also use Customize Counter in Statcounter. */
+.statusbar .statcounter-widget img{display:inline-block;width:auto!important;height:32px!important;max-width:none!important;vertical-align:middle;filter:grayscale(1) invert(1);mix-blend-mode:screen;transform:none}
+@media(max-width:720px){.statusbar .container{align-items:flex-start;gap:7px}.statusbar-meta{justify-content:flex-start;gap:8px 16px}.visit-count{padding-left:12px}.visit-count-label{font-size:15px}}
+@media(max-width:430px){.statusbar-meta{flex-wrap:wrap}.visit-count{border-left:0;padding-left:0}.statusbar .statcounter-widget img{height:28px!important}}
